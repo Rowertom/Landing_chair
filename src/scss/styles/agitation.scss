@@ -1,0 +1,101 @@
+.main__agitation {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding-bottom: 100px;
+    background-color: #EFEFEF;
+    @media (max-width: 1150px){
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__bonus {
+        display: inherit;
+        justify-content: space-between;
+        align-items: center;
+        width: 540px;
+        height: 212px;
+        background-color: #66C05D;
+        color: #FFFFFF;
+        padding: 35px 40px;
+        @media (max-width:600px){
+            width: 100%;
+            height: 100%;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        &__content {
+            display: inherit;
+            flex-direction: column;
+            gap: 30px;
+            @media (max-width:600px){
+                align-items: center;;
+            }
+
+            &__h3 {
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 21px;
+            }
+
+            &__p {
+                line-height: 20px;
+            }
+
+            &__input {
+                width: 225px;
+                height: 35px;
+                border-radius: 20px;
+
+                &::placeholder {
+                    color: #C4C4C4;
+                    padding: 9px 0 9px 25px;
+                }
+
+                &[type="email"] {
+                    color: #C4C4C4;
+                    padding: 9px 0 9px 25px;
+                }
+            }
+        }
+    }
+
+    &__invite {
+        display: inherit;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 540px;
+        height: 212px;
+        background-color: #66C05D;
+        color: #FFFFFF;
+        padding: 35px 40px;
+        @media (max-width:600px){
+            width: 100%;
+            height: 100%;
+            align-items: center;
+            gap:10px;
+        }
+        &__h3 {
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 21px;
+        }
+        &__p{
+            line-height: 20px;
+        }
+        &__button{
+            width: 170px;
+            height: 35px;
+            background-color: #66C05D;
+            border: 2px solid white;
+            border-radius: 20px;
+            &:hover{
+                background-color: #45853f;
+            }
+            &__a{
+                color:#FFFFFF;
+            }
+        }
+    }
+}
